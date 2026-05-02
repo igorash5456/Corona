@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona - Ресторан для Твоего Идеального Дня</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="#" class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5ZM19 19C19 19.5523 18.5523 20 18 20H6C5.44772 20 5 19.5523 5 19V18H19V19Z" />
+                </svg>
+                CORONA
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features" data-i18n="nav_features">Возможности</a></li>
+                <li><a href="#gallery" data-i18n="nav_gallery">Галерея</a></li>
+                <li><a href="#about" data-i18n="nav_about">О Нас</a></li>
+                <li><a href="#services" data-i18n="nav_services">Услуги</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Контакты</a></li>
+            </ul>
+            <div style="display: flex; align-items: center;">
+                <button class="cta-btn" data-i18n="nav_order"
+                    onclick="window.location.href='tel:+37369835257'">Заказать</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION WITH VIDEO BACKGROUND -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="images/demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1 data-i18n="hero_title">Ваш <span class="hero-accent">Идеальный</span> День<br>Начинается Здесь</h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Роскошный банкетный зал для незабываемого торжества</p>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <h2 class="section-title" data-i18n="features_title">Наши Преимущества</h2>
+            <p class="section-subtitle" data-i18n="features_subtitle">Всё, что нужно для идеального праздника</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3 data-i18n="f1_title">120 Пар</h3>
+                    <p data-i18n="f1_desc">Просторный зал вмещает до 120 пар гостей. Идеальная вместимость для
+                        масштабного торжества с
+                        комфортом для всех.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3 data-i18n="f2_title">Световой Дизайн</h3>
+                    <p data-i18n="f2_desc">Профессиональное фоновое освещение стен создаёт атмосферу волшебства.
+                        Меняющиеся цветовые гаммы
+                        под Вашу тематику.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3 data-i18n="f3_title">Танцпол со Светомузыкой</h3>
+                    <p data-i18n="f3_desc">Огромная танцпалубра оборудована современной светомузыкальной системой для
+                        незабываемого
+                        развлечения гостей.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🍽️</div>
+                    <h3 data-i18n="f4_title">Фуршет & Банкеты</h3>
+                    <p data-i18n="f4_desc">Полный спектр услуг по организации фуршета. Профессиональная кухня и
+                        обслуживание высочайшего
+                        уровня.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-container">
+            <h2 class="section-title" data-i18n="gallery_title">Галерея</h2>
+            <p class="section-subtitle" data-i18n="gallery_subtitle">Посмотрите, как выглядит наш ресторан</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #d4af37 0%, #2d5016 100%);">
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-text" data-i18n="g_facade">Фасад</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #2d5016 0%, #d4af37 100%);">
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-text" data-i18n="g_main_hall">Основной Зал</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #f5f1ed 0%, #d4af37 100%);">
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-text" data-i18n="g_decor">Декор</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #2d5016 0%, #1a1a1a 100%);">
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-text" data-i18n="g_light">Светомузыка</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #d4af37 0%, #1a1a1a 100%);">
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-text" data-i18n="g_dance">Танцпол</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div
+                        style="width: 100%; height: 100%; background: linear-gradient(135deg, #f5f1ed 0%, #2d5016 100%);">
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-text" data-i18n="g_couple">Жених и Невеста</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 data-i18n="about_title">Добро Пожаловать в Corona</h2>
+                <p data-i18n="about_p1">Corona — это премиальный ресторан, специализирующийся на организации идеальных
+                    свадеб и корпоративных
+                    мероприятий. Наш опыт, профессионализм и внимание к деталям делают каждое событие уникальным и
+                    незабываемым.</p>
+                <p data-i18n="about_p2">Мы гордимся нашей репутацией и стремимся превосходить ожидания каждого клиента.
+                    От момента первого
+                    контакта до последнего тоста — мы заботимся о каждой детали Вашего торжества.</p>
+
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label" data-i18n="stat_events">Успешных Событий</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">120</div>
+                        <div class="stat-label" data-i18n="stat_guests">Мест для Гостей</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">18+</div>
+                        <div class="stat-label" data-i18n="stat_years">Лет в Индустрии</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-image"></div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <div class="services-container">
+            <h2 class="section-title" data-i18n="services_title">Наши Услуги</h2>
+            <p class="section-subtitle" data-i18n="services_subtitle">Полный спектр услуг для Вашего идеального дня</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎊</div>
+                    <h3 data-i18n="s1_title">Организация Свадеб</h3>
+                    <p data-i18n="s1_desc">Полный пакет услуг по организации свадьбы от А до Я. Мы позаботимся обо всех
+                        деталях вашего
+                        большого дня.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎂</div>
+                    <h3 data-i18n="s2_title">Кулинарное Мастерство</h3>
+                    <p data-i18n="s2_desc">Изысканные блюда от наших шеф-поваров. Мы предлагаем различные меню для любых
+                        предпочтений и
+                        диеты.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎤</div>
+                    <h3 data-i18n="s3_title">Развлечение</h3>
+                    <p data-i18n="s3_desc">Профессиональный звук, сценография и светомузыка. DJ, живая музыка и
+                        развлечения для гостей.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💐</div>
+                    <h3 data-i18n="s4_title">Декорирование</h3>
+                    <p data-i18n="s4_desc">Уникальный дизайн интерьера с цветами, свечами и декоративными элементами под
+                        Вашу тематику.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📸</div>
+                    <h3 data-i18n="s5_title">Фотография</h3>
+                    <p data-i18n="s5_desc">Профессиональные фотографы и видеографы, которые запечатлят все самые важные
+                        моменты Вашего
+                        события.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3 data-i18n="s6_title">Транспорт</h3>
+                    <p data-i18n="s6_desc">Организация транспорта для молодожёнов и гостей. Элегантные автомобили для
+                        незабываемых
+                        фотосессий.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2 data-i18n="cta_title">Готовы Начать?</h2>
+            <p data-i18n="cta_desc">Свяжитесь с нами сегодня и давайте создадим Ваше идеальное торжество вместе. Наша
+                команда ждёт Вас!</p>
+            <button class="cta-button" data-i18n="cta_btn">Связаться с Нами</button>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 data-i18n="contact_title">Свяжитесь с Нами</h2>
+
+                <div class="contact-item">
+                    <div class="contact-label" data-i18n="contact_phone">📞 Телефон</div>
+                    <div class="contact-value">+373 (69) 83 52 57</div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label" data-i18n="contact_email">📧 Email</div>
+                    <div class="contact-value">igorash5456@gmail.com</div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label" data-i18n="contact_address">📍 Адрес</div>
+                    <div class="contact-value">ул. 27 Августа, 26, Молдова, г.Дрокия</div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label" data-i18n="contact_time">⏰ Время Работы</div>
+                    <div class="contact-value" data-i18n="time_val">Ежедневно с 11:00 до 23:00</div>
+                </div>
+
+                <div class="contact-social" style="margin-top: 2.5rem; display: flex; gap: 1rem;">
+                    <a href="https://facebook.com" target="_blank" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: var(--primary); color: var(--light-bg); text-decoration: none; transition: transform 0.3s ease, background 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.background='var(--primary-dark)'" onmouseout="this.style.transform='scale(1)'; this.style.background='var(--primary)'">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: var(--primary); color: var(--light-bg); text-decoration: none; transition: transform 0.3s ease, background 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.background='var(--primary-dark)'" onmouseout="this.style.transform='scale(1)'; this.style.background='var(--primary)'">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: var(--primary); color: var(--light-bg); text-decoration: none; transition: transform 0.3s ease, background 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.background='var(--primary-dark)'" onmouseout="this.style.transform='scale(1)'; this.style.background='var(--primary)'">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="map-container"
+                style="width: 100%; height: 100%; min-height: 400px; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+                <iframe
+                    src="https://maps.google.com/maps?q=Drochia,%20str.%2027%20August,%2026&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo" style="display: flex; align-items: center; gap: 10px;">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5ZM19 19C19 19.5523 18.5523 20 18 20H6C5.44772 20 5 19.5523 5 19V18H19V19Z" />
+                </svg>
+                CORONA
+            </div>
+            <div class="footer-links">
+                <a href="#features" data-i18n="nav_features">Возможности</a>
+                <a href="#gallery" data-i18n="nav_gallery">Галерея</a>
+                <a href="#about" data-i18n="nav_about">О Нас</a>
+                <a href="#services" data-i18n="nav_services">Услуги</a>
+                <a href="#contact" data-i18n="nav_contact">Контакты</a>
+            </div>
+            <div class="footer-copyright">
+                <span data-i18n="footer_copy">© 2024 Corona Restaurant. Все права защищены. | Премиальный банкетный зал
+                    для Ваших торжеств</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="lang.js"></script>
+</body>
+
+</html>
